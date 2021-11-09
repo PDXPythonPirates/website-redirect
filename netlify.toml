@@ -1,4 +1,4 @@
-
+# netlify config for pythonpirates redirect
 [build]
   publish = "site"
   command = ""
@@ -7,5 +7,10 @@
   from = "/*"
   to = "https://www.pythonpyrates.org/"
   status = 302
-  force = false
+  force = true
 
+[[redirects]]
+  from = "https://www.pythonpirates.org/*"
+  to = "https://www.pythonpyrates.org/"
+  status = 302
+  force = true
